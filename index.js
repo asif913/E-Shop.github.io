@@ -31,7 +31,7 @@ form.addEventListener("submit",function(event){
     }
     if(attempts<6){
         checkResult(guessingNumber.value);
-        remainingAttempts.innerHTML=`ramainingAttempts: ${totalAttempts-attempts}`;
+        remainingAttempts.innerHTML=`RemainingAttempts: ${totalAttempts-attempts}`;
 
     }
     guessingNumber.value="";
