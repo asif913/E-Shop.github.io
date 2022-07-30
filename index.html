@@ -4,42 +4,280 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>guessing game</title>
-    <link rel="stylesheet" href="index.css">
-
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
 <body>
 
-    <div class="container">
-        <div class="card">
-            <div class="card-titel">
-                <h1>guessing game</h1>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+            <div class="container">
+              <a class="navbar-brand" href="#">
+                <img src="images/logo.png" alt="" width="60" height="50">
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
 
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#shoes">Shoes</a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#bag">Bag</a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#subscribe">Subscribe</a>
+                  </li>
+                 
+                </ul>
+              
+              </div>
             </div>
-            <div class="card-body">
-   <form>
+          </nav>
+
+          <!---slider-->
 
 
-    <div class="from-field">
-        <label for="guessingNumber">Guess a number Between 1 to 5 </label>
-        <input type="number" id="guessingNumber" min="1" max="5" required/>
-    </div>
+          <section class="container">
 
-    <div class="buttons">
-        <button id="check" type="submit" class="btn"> check result</button>
-    </div>
-
-   </form>
-
-   <p class="result-text"></p>
-
-   <p class="remainingAttempts"></p>
-
-            </div>
-        </div>
-    </div>
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <div class="row bg-info bg-gradient p-5 d-flex align-items-center">
+                        <div class="col-lg-7">
+                            <h1>Cool Dude headphone</h1>
+                            <p>This is the best bag in the world</p>
+                            <h1>$500</h1>
+                            <button class="btn btn-warning">Buy Now</button>
+                            
+                        </div>
     
+                        <div class="col-lg-5">
+                            <img src="images/headphone.png" class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+    
+                  </div>
+                  <div class="carousel-item">
+                    <div class="row bg-info bg-gradient p-5 d-flex align-items-center">
+                        <div class="col-lg-7">
+                            <h1>X-Box for your living room</h1>
+                            <p>This is the best X-Box in the world</p>
+                            <h1>$150</h1>
+                            <button class="btn btn-warning">Buy Now</button>
+                            
+                        </div>
+    
+                        <div class="col-lg-5">
+                            <img src="images/xbox.png" class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+    
+                  </div>
+                  <div class="carousel-item">
+                    <div class="row bg-info bg-gradient p-5 d-flex align-items-center">
+                        <div class="col-lg-7">
+                            <h1>Mega LCD TV For Sports</h1>
+                            <p>This is the best TV in the world.Dolore et et ipsum sed sit accusam. Ipsum amet stet.</p>
+                            <h1>$750</h1>
+                            <button class="btn btn-warning">Buy Now</button>
+                            
+                        </div>
+    
+                        <div class="col-lg-5">
+                            <img src="images/tv.png" class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+    
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+          </section>
 
-    <script src="./index.js"></script>
+
+
+    </header>
+    
+    <main>
+        <!--catagories-->
+        <section>
+            <div class="container py-5">
+                <div class="row g-4">
+                  <div class="col-lg-4 col-md-6">
+                    <div class="p-3 border bg-warning d-flex align-items-center justify-content-between rounded-3 ">
+                    <h1 class="text-white">Watch</h1>    
+                    <img src="images/watch.png" alt=""> 
+                    </div>
+                  </div>
+
+                  <div class="col-lg-4 col-md-6">
+                    <div class="p-3 border bg-danger d-flex align-items-center justify-content-between rounded-3 ">
+                    <h1 class="text-white">Shoes</h1>    
+                    <img src="images/shoes.png" alt=""> 
+                    </div>
+                  </div>
+
+                  <div class="col-lg-4 col-md-6">
+                    <div class="p-3 border bg-info d-flex align-items-center justify-content-between rounded-3 ">
+                    <h1 class="text-white">Bag</h1>    
+                    <img src="images/bag.png" alt=""> 
+                    </div>
+                  </div>
+
+                  
+                </div>
+              </div>
+        </section>
+
+          <!--shoes-->
+
+        <section class="container mb-5" id="shoes">
+            <h2>Shoes</h2>
+
+            <div class="row row-cols-1 row-cols-lg-3 row-cols-md-2 g-4">
+                <div class="col">
+                  <div class="card border-0 shadow-lg h-100">
+                    <img src="images/shoe-1.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Supply 350</h5>
+                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    </div>
+                    <div class="m-3">
+                   <button class="btn btn-warning">
+                    Buy Now
+
+                   </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card border-0 shadow-lg h-100">
+                    <img src="images/shoe-2.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Nike 360</h5>
+                      <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                    </div>
+                    <div class="m-3">
+                        <button class="btn btn-warning">
+                            Buy Now
+        
+        
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card border-0 shadow-lg h-100">
+                    <img src="images/shoe-3.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Red airmax</h5>
+                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                    </div>
+                    <div class="m-3">
+                        <button class="btn btn-warning">
+                            Buy Now
+        
+        
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </section>
+
+        <!--Bag-->
+
+
+        <section class="container my-5" id="bag">
+            <h2>Bags</h2>
+
+            <div class="row row-cols-1 row-cols-lg-3 row-cols-md-2 g-4">
+                <div class="col">
+                  <div class="card border-0 shadow-lg h-100">
+                    <img src="images/bag-1.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Red AAA Bag</h5>
+                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    </div>
+                    <div class="m-3">
+                   <button class="btn btn-warning">
+                    Buy Now
+
+                   </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card border-0 shadow-lg h-100">
+                    <img src="images/bag-2.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Blue BBB Bag</h5>
+                      <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                    </div>
+                    <div class="m-3">
+                        <button class="btn btn-warning">
+                            Buy Now
+        
+        
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card border-0 shadow-lg h-100">
+                    <img src="images/bag-3.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Black CCC Bag</h5>
+                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                    </div>
+                    <div class="m-3">
+                        <button class="btn btn-warning">
+                            Buy Now
+        
+        
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </section>
+        <!--Subscribe-->
+
+        <section style="height: 300px;;" class="container bg-info d-flex justify-content-center align-items-center" id="subscribe">
+
+
+            <div>
+                <h1>GET IN TOUCH</h1>
+                <p>Get update on sales,specials and more</p>
+                <input type="text" placeholder="Your Email">
+                <br>
+                <button class="btn btn-warning">SUBMIT</button>
+    
+    
+            </div>
+        </section>
+
+
+    </main>
+
+    <footer class="mt-5 text-center">
+        <p><small>Copyright &copy; Ashraful Alam Asif 2022</small></p>
+
+
+
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>
